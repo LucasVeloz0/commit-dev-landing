@@ -88,20 +88,24 @@ const Header = () => {
 
         {/* Conteúdo sobre o vídeo */}
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-center px-4 sm:px-12 py-10">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4">
-            Contrate a Commit.dev para criar seu site!
-          </h1>
-          <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto">
-            Seu negócio será visível por seus clientes com seu site rápido e seguro.
-          </h2>
-          <p className="text-sm sm:text-lg mb-6 font-roboto">
-            Criamos soluções web e aplicativos de alto desempenho.
-            <br />
-            Sites, sistemas web e aplicativos.
-          </p>
-          <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
-            Saiba Mais
-          </button>
+          <div className="max-w-4xl w-full mx-auto">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing">
+              Contrate a Commit.dev para criar seu site!
+            </h1>
+            <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left">
+              Seu negócio será visível por seus clientes com seu site rápido e seguro.
+            </h2>
+            <p className="text-sm sm:text-lg mb-6 font-roboto text-left">
+              Criamos soluções web e aplicativos de alto desempenho.
+              <br />
+              Sites, sistemas web e aplicativos.
+            </p>
+            <div className="w-full flex justify-center sm:justify-end">
+              <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+                Saiba Mais
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>

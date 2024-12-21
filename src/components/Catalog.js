@@ -38,9 +38,9 @@ const Catalog = () => {
         {/* Modelo 3 */}
         <div className="site-card border rounded-lg overflow-hidden shadow-lg">
           <img
-            src="/images/ecommerce-seo.webp"
-            alt="Modelo de Site 3"
-            className="w-full h-48 object-cover"
+          src="/images/ecommerce-seo.webp"
+          alt="Modelo de Site 3"
+          className="w-full h-48 object-cover"
           />
           <div className="p-4">
             <h3 className="text-xl font-bold mb-2">Modelo de Site 3</h3>

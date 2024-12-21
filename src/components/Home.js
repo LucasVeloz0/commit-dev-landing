@@ -1,28 +1,33 @@
 import React from 'react';
-import ImageSeo from '../images/seo.png';
+import ImageSeo from '../images/seo.png'; // Ajuste o caminho conforme necessário
 import ImageSistemas from '../images/sistemas-web.png';
 import ImageMobile from '../images/mobile.png';
+import Giro from '../images/giro.png'; // Ajuste o caminho conforme necessário
 
 const Home = () => {
   return (
-    <section id="home" className=" py-16 px-8">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-right w-full">
-        {/* Div do Título (h2) */}
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold text-[#25a35b] mb-4 font-roboto ">
-            Por que ter um site profissional
-            <br />
-            é essencial para o seu negócio?
-          </h2>
-        </div>
+    <section id="home" className="py-16 px-4 sm:px-8">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-right w-full">
+          {/* Div do Título (h2) */}
+          <div className="flex-1">
+            <h2 className="text-3xl font-bold text-[#25a35b] mb-4 font-roboto">
+              Por que ter um site profissional
+              <br />
+              é essencial para o seu negócio?
+            </h2>
+          </div>
 
-        {/* Parágrafo (p) */}
-        <div className="flex-1 px-5 ">
-          <p className="text-lg text-gray-100 font-roboto max-w-2xl">
-            Ter um site profissional não é apenas um diferencial, é uma necessidade. Seu site será a porta de entrada para clientes conhecerem sua
-            empresa, seus serviços e produtos. Ele é uma vitrine aberta 24 horas por dia, oferecendo informações relevantes e mostrando que sua marca
-            está preparada para atender às demandas.
-          </p>
+          {/* Parágrafo Para alterar (p) */}
+          <div className="flex-1 px-5">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-lg text-gray-100 font-roboto">
+                Ter um site profissional não é apenas um diferencial, é uma necessidade. Seu site será a porta de entrada para clientes conhecerem sua
+                empresa, seus serviços e produtos. Ele é uma vitrine aberta 24 horas por dia, oferecendo informações relevantes e mostrando que sua marca
+                está preparada para atender às demandas.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -63,21 +68,23 @@ const Home = () => {
 
         {/* Seção com imagem à esquerda e texto à direita */}
         <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="flex-1 text-right">
-            <img
-              src={ImageSeo}
-              alt="Exemplo de site"
-              className="w-full max-w-[300px] max-h-[300px] rounded-lg mx-auto"
-            />
-          </div>
-          <div className="flex-1 px ">
-            <p className="text-lg text-gray-100 font-roboto max-w-2xl ">
-              Por isso, desenvolvemos sites otimizados para SEO (Search Engine Optimization), garantindo que sua
-              empresa apareça nas primeiras páginas do Google. Com técnicas avançadas, criamos conteúdo relevante,
-              estruturação estratégica e velocidade aprimorada para destacar sua marca no ambiente digital,
-              aumentando seu tráfego orgânico.
-              <br />
-              Seja visto. Seja encontrado. Cresça com SEO!
+        <div className="flex-1 relative">
+        <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
+    <img
+      src={ImageSeo}
+      alt="Exemplo de site"
+      className="w-full h-full rounded-lg"
+    />
+    <img
+      src={Giro}
+      alt="Giro"
+      className="absolute inset-0 w-full h-full rounded-lg animate-rotate"
+    />
+  </div>
+</div>
+          <div className="flex-1 px">
+            <p className="text-lg text-gray-100 font-roboto max-w-2xl">
+              Apenas um site bonito não basta, ele precisa ser encontrado.
             </p>
           </div>
         </div>
@@ -89,13 +96,20 @@ const Home = () => {
 
         {/* Imagem à esquerda com texto à direita superior e nova imagem abaixo */}
         <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="flex-1 text-right">
-            <img
-              src={ImageSistemas}
-              alt="Exemplo de design"
-              className="w-full max-w-[300px] max-h-[300px] rounded-lg mx-auto"
-            />
-          </div>
+        <div className="flex-1 relative">
+        <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
+          <img
+            src={ImageSistemas}
+            alt="Exemplo de site"
+            className="w-full h-full rounded-lg"
+          />
+          <img
+            src={Giro}
+            alt="Giro"
+            className="absolute inset-0 w-full h-full rounded-lg animate-rotate"
+          />
+        </div>
+      </div>
           <div className="flex-1">
             <p className="text-lg text-gray-100 font-roboto text-center">
             ...criamos sistemas web completos, integrações de sistemas...
@@ -104,18 +118,26 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-8 mt-8">
-          <div className="flex-1">
-            <p className="text-lg text-gray-100 font-roboto text-center">
-            ...aplicativos para gestão do seu negocio...            </p>
-          </div>
-          <div className="flex-1">
+  <div className="flex-1">
+    <p className="text-lg text-gray-100 font-roboto text-center">
+      ...aplicativos para gestão do seu negócio...
+    </p>
+  </div>
+        <div className="flex-1 relative">
+          <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
             <img
               src={ImageMobile}
               alt="Exemplo de performance"
-              className="w-full max-w-[300px] max-h-[300px] rounded-lg mc-auto"
+              className="w-full h-full rounded-lg"
             />
-          </div>          
+            <img
+              src={Giro}
+              alt="Giro"
+              className="absolute inset-0 w-full h-full rounded-lg animate-rotate"
+            />
+          </div>
         </div>
+      </div>
       </div>
     </section>
   );
