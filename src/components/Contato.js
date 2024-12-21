@@ -4,7 +4,7 @@ const Contato = () => {
   return (
     <section id="contato" className="bg-black py-16 px-8 text-center">
       {/* Título */}
-      <h2 className="text-3xl font-bold text-[#f54a0f] mb-6 font-roboto">
+      <h2 className="text-3xl font-bold text-[#25a35b] mb-6 font-roboto">
         Entre em Contato
       </h2>
 
@@ -19,7 +19,7 @@ const Contato = () => {
           href="https://www.instagram.com/seuperfil"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-100 hover:text-[#f54a0f] transition duration-300"
+          className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,31 +31,14 @@ const Contato = () => {
           </svg>
           Instagram
         </a>
-
-        {/* Facebook */}
-        <a
-          href="https://facebook.com/seuperfil" // Substitua pelo link do seu perfil
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-100 hover:text-[#f54a0f] transition duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-12 h-12 mb-2"
-          >
-            <path d="M22.675 0h-21.35C.597 0 0 .598 0 1.33v21.339C0 23.402.598 24 1.33 24h11.499v-9.294H9.837V11.09h2.992V8.419c0-2.965 1.805-4.577 4.443-4.577 1.262 0 2.349.093 2.663.135v3.088h-1.826c-1.432 0-1.709.681-1.709 1.681v2.2h3.417l-.447 3.616h-2.97V24h5.818c.732 0 1.33-.598 1.33-1.33V1.33C24 .598 23.402 0 22.675 0z" />
-          </svg>
-          <p>Facebook</p>
-        </a>
+      
 
            {/* WhatsApp */}
         <a
           href="https://wa.me/5515996012951" // Substitua pelo número do WhatsApp com o código do país
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-100 hover:text-[#f54a0f] transition duration-300"
+          className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

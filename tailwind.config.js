@@ -8,6 +8,9 @@ module.exports = {
         michroma: ['Michroma', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
+      colors: {
+        'custom-background': '#000b1b'
+      },
     },
   },
   plugins: [],

@@ -5,11 +5,11 @@ import ImageMobile from '../images/mobile.png';
 
 const Home = () => {
   return (
-    <section id="home" className="bg-black py-16 px-8">
+    <section id="home" className=" py-16 px-8">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-right w-full">
         {/* Div do Título (h2) */}
         <div className="flex-1">
-          <h2 className="text-3xl font-bold text-[#f54a0f] mb-4 font-roboto ">
+          <h2 className="text-3xl font-bold text-[#25a35b] mb-4 font-roboto ">
             Por que ter um site profissional
             <br />
             é essencial para o seu negócio?
@@ -28,7 +28,7 @@ const Home = () => {
 
       {/* Novo Título (h2) */}
       <div className="flex flex-col items-center justify-center text-center mt-12">
-        <h2 className="text-3xl font-bold text-[#f54a0f] mb-4 font-roboto">
+        <h2 className="text-3xl font-bold text-[#25a35b] mb-4 font-roboto">
           Somos especialistas em criar sites sob medida, focados em resultados.
         </h2>
         <p className="text-lg text-gray-100 font-roboto">
@@ -40,7 +40,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-20 mt-16">
         {/* Div Esquerda - Parágrafo e Botão */}
         <div className="flex-1 text-center md:text-right">
-          <p className="text-lg text-[#f54a0f] font-roboto mb-4">Vamos transformar sua ideia!</p>
+          <p className="text-lg text-[#25a35b] font-roboto mb-4">Vamos transformar sua ideia!</p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">Clique Aqui</button>
         </div>
 

@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@400;700&display=swap');
 
 body {
+  @apply bg-custom-background z-0 bg-fixed bg-cover text-white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.modelos-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.modelo-coluna {
+  flex: 1 1 25%; /* Cada coluna ocupa 25% da largura */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
 
 
 
