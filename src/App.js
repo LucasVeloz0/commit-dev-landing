@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-custom-background max-w-screen-xl mx-auto min-w-[430px]">
+    <div className="App bg-custom-background w-full mx-auto min-w-[430px]">
       <Header />
       <Home />
       <Modelos />

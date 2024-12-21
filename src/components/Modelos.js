@@ -19,23 +19,23 @@ const Modelos = () => {
     };
 
     const modelosCategoria1 = [
-        { id: 1, texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-        { id: 2, texto: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+        { id: 1, texto: "Projeto 1", link: "/assets/landing-page1/index.html" },
+        { id: 2, texto: "Projeto 2", link: "/assets/landing-page2/index.html" }
     ];
 
     const modelosCategoria2 = [
-        { id: 1, texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-        { id: 2, texto: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+        { id: 1, texto: "Projeto 1", link: "/assets/institucional1/index.html" },
+        { id: 2, texto: "Projeto 2", link: "/assets/institucional2/index.html" }
     ];
 
     const modelosCategoria3 = [
-        { id: 1, texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-        { id: 2, texto: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+        { id: 1, texto: "Projeto 1", link: "/assets/portfolio1/index.html" },
+        { id: 2, texto: "Projeto 2", link: "/assets/portfolio2/index.html" }
     ];
 
     const modelosCategoria4 = [
-        { id: 1, texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-        { id: 2, texto: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+        { id: 1, texto: "Projeto 1", link: "/assets/ecommerce1/index.html" },
+        { id: 2, texto: "Projeto 2", link: "/assets/ecommerce2/index.html" }
     ];
 
     const handleScroll = (e, sliderRef) => {
@@ -47,32 +47,53 @@ const Modelos = () => {
     };
 
     return (
-        <section className="h-3/4 flex flex-wrap">
+        <section className="h-4/5 flex flex-wrap">
             <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef1)}>
-                <h3 className="text-xl font-bold">Categoria 1</h3>
+                <h3 className="text-xl font-bold">Landing-Pages</h3>
                 <Slider ref={sliderRef1} {...settings}>
                     {modelosCategoria1.map(modelo => (
                         <div key={modelo.id}>
+                            <iframe 
+                                src={modelo.link} 
+                                width="100%" 
+                                height="500px" 
+                                title={`Projeto ${modelo.id}`} 
+                                frameBorder="0"
+                            />
                             <p>{modelo.texto}</p>
                         </div>
                     ))}
                 </Slider>
             </div>
             <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef2)}>
-                <h3 className="text-xl font-bold">Categoria 2</h3>
+                <h3 className="text-xl font-bold">Institucional</h3>
                 <Slider ref={sliderRef2} {...settings}>
                     {modelosCategoria2.map(modelo => (
                         <div key={modelo.id}>
+                            <iframe 
+                                src={modelo.link} 
+                                width="100%" 
+                                height="500px" 
+                                title={`Projeto ${modelo.id}`} 
+                                frameBorder="0"
+                            />
                             <p>{modelo.texto}</p>
                         </div>
                     ))}
                 </Slider>
             </div>
             <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef3)}>
-                <h3 className="text-xl font-bold">Categoria 3</h3>
+                <h3 className="text-xl font-bold">Portfolio</h3>
                 <Slider ref={sliderRef3} {...settings}>
                     {modelosCategoria3.map(modelo => (
                         <div key={modelo.id}>
+                            <iframe 
+                                src={modelo.link} 
+                                width="100%" 
+                                height="500px" 
+                                title={`Projeto ${modelo.id}`} 
+                                frameBorder="0"
+                            />
                             <p>{modelo.texto}</p>
                         </div>
                     ))}
@@ -83,6 +104,13 @@ const Modelos = () => {
                 <Slider ref={sliderRef4} {...settings}>
                     {modelosCategoria4.map(modelo => (
                         <div key={modelo.id}>
+                            <iframe 
+                                src={modelo.link} 
+                                width="100%" 
+                                height="500px" 
+                                title={`Projeto ${modelo.id}`} 
+                                frameBorder="0"
+                            />
                             <p>{modelo.texto}</p>
                         </div>
                     ))}
