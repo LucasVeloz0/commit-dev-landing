@@ -32,13 +32,12 @@ const Contato = () => {
           Instagram
         </a>
       
-
-           {/* WhatsApp */}
+        {/* WhatsApp */}
         <a
-          href="https://wa.me/5515996012951" // Substitua pelo número do WhatsApp com o código do país
+          href="https://wa.me/+5515996012951" // Substitua pelo seu número de WhatsApp
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
+          className="flex flex-col items-center text-gray-700 hover:text-green-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +48,24 @@ const Contato = () => {
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.029-.963-.271-.1-.467-.149-.662.149-.197.297-.758.963-.929 1.161-.17.197-.342.223-.639.074-.297-.149-1.255-.463-2.39-1.476-.884-.787-1.48-1.758-1.653-2.056-.173-.297-.019-.458.13-.606.134-.133.297-.346.446-.519.149-.173.198-.297.298-.495.099-.198.05-.371-.025-.519-.075-.148-.662-1.595-.907-2.182-.238-.572-.479-.495-.662-.495-.173-.009-.371-.012-.57-.012-.198 0-.518.074-.789.371-.271.297-1.04 1.015-1.04 2.479 0 1.463 1.065 2.875 1.213 3.071.149.198 2.094 3.2 5.071 4.487.709.305 1.263.487 1.695.623.712.227 1.36.195 1.87.118.571-.084 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.271-.198-.57-.346zm-5.472-11.382c-5.523 0-10 4.477-10 10 0 1.767.464 3.514 1.349 5.035l-1.399 4.01 4.154-1.364c1.443.787 3.057 1.204 4.896 1.204 5.522 0 10-4.478 10-10s-4.478-10-10-10zm0 18.407c-1.576 0-3.11-.423-4.428-1.222l-.317-.19-2.462.809.825-2.394-.205-.307c-.815-1.224-1.26-2.654-1.26-4.103 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" />
           </svg>
           WhatsApp
+        </a>
+
+        {/* Email */}
+        <a
+          href="mailto:seuemail@exemplo.com" // Substitua pelo seu endereço de email
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center text-gray-700 hover:text-green-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-12 h-12 mb-2"
+          >
+            <path d="M12 12.713l11.985-8.713h-23.97l11.985 8.713zm0 2.574l-12-8.713v13.426h24v-13.426l-12 8.713z" />
+          </svg>
+          Email
         </a>
       </div>
     </section>
