@@ -58,6 +58,7 @@ const Modelos = () => {
                             height="500px" 
                             title={`Projeto ${modelo.id}`} 
                             frameBorder="0"
+                            loading="lazy" // Adiciona carregamento assíncrono
                         />
                         <p className="text-center">{modelo.texto}</p>
                     </div>
