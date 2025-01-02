@@ -31,7 +31,8 @@ const Modelos = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        swipeToSlide: true
+        swipeToSlide: true,
+        arrows: false // Desabilitar os botões de navegação padrão
     };
 
     const modelosCategoria1 = [
