@@ -10,10 +10,20 @@ function App() {
   return (
     <div className="App bg-custom-background w-full mx-auto min-w-[430px]">
       <Header />
-      <Home />
-      <Modelos />
-      <CaseDeSucesso />
-      <Contato />
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="modelos">
+          <Modelos />
+        </section>
+        <section id="cases-de-sucesso">
+          <CaseDeSucesso />
+        </section>
+        <section id="contato">
+          <Contato />
+        </section>
+      </main>
       <Footer />
     </div>
   );

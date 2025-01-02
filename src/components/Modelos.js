@@ -1,13 +1,29 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Loading from './Loading';
 
 const Modelos = () => {
     const sliderRef1 = useRef(null);
     const sliderRef2 = useRef(null);
     const sliderRef3 = useRef(null);
     const sliderRef4 = useRef(null);
+
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simula um carregamento de dados
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000); // Ajuste o tempo conforme necessário
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <Loading />;
+    }
 
     const settings = {
         dots: true,
@@ -47,75 +63,77 @@ const Modelos = () => {
     };
 
     return (
-        <section className="h-4/5 flex flex-wrap">
-            <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef1)}>
-                <h3 className="text-xl font-bold">Landing-Pages</h3>
-                <Slider ref={sliderRef1} {...settings}>
-                    {modelosCategoria1.map(modelo => (
-                        <div key={modelo.id}>
-                            <iframe 
-                                src={modelo.link} 
-                                width="100%" 
-                                height="500px" 
-                                title={`Projeto ${modelo.id}`} 
-                                frameBorder="0"
-                            />
-                            <p>{modelo.texto}</p>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-            <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef2)}>
-                <h3 className="text-xl font-bold">Institucional</h3>
-                <Slider ref={sliderRef2} {...settings}>
-                    {modelosCategoria2.map(modelo => (
-                        <div key={modelo.id}>
-                            <iframe 
-                                src={modelo.link} 
-                                width="100%" 
-                                height="500px" 
-                                title={`Projeto ${modelo.id}`} 
-                                frameBorder="0"
-                            />
-                            <p>{modelo.texto}</p>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-            <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef3)}>
-                <h3 className="text-xl font-bold">Portfolio</h3>
-                <Slider ref={sliderRef3} {...settings}>
-                    {modelosCategoria3.map(modelo => (
-                        <div key={modelo.id}>
-                            <iframe 
-                                src={modelo.link} 
-                                width="100%" 
-                                height="500px" 
-                                title={`Projeto ${modelo.id}`} 
-                                frameBorder="0"
-                            />
-                            <p>{modelo.texto}</p>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-            <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef4)}>
-                <h3 className="text-xl font-bold">Categoria 4</h3>
-                <Slider ref={sliderRef4} {...settings}>
-                    {modelosCategoria4.map(modelo => (
-                        <div key={modelo.id}>
-                            <iframe 
-                                src={modelo.link} 
-                                width="100%" 
-                                height="500px" 
-                                title={`Projeto ${modelo.id}`} 
-                                frameBorder="0"
-                            />
-                            <p>{modelo.texto}</p>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+        <section className="modelos">
+            <section className="h-4/5 flex flex-wrap">
+                <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef1)}>
+                    <h3 className="text-xl font-bold">Landing-Pages</h3>
+                    <Slider ref={sliderRef1} {...settings}>
+                        {modelosCategoria1.map(modelo => (
+                            <div key={modelo.id}>
+                                <iframe 
+                                    src={modelo.link} 
+                                    width="100%" 
+                                    height="500px" 
+                                    title={`Projeto ${modelo.id}`} 
+                                    frameBorder="0"
+                                />
+                                <p>{modelo.texto}</p>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+                <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef2)}>
+                    <h3 className="text-xl font-bold">Institucional</h3>
+                    <Slider ref={sliderRef2} {...settings}>
+                        {modelosCategoria2.map(modelo => (
+                            <div key={modelo.id}>
+                                <iframe 
+                                    src={modelo.link} 
+                                    width="100%" 
+                                    height="500px" 
+                                    title={`Projeto ${modelo.id}`} 
+                                    frameBorder="0"
+                                />
+                                <p>{modelo.texto}</p>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+                <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef3)}>
+                    <h3 className="text-xl font-bold">Portfolio</h3>
+                    <Slider ref={sliderRef3} {...settings}>
+                        {modelosCategoria3.map(modelo => (
+                            <div key={modelo.id}>
+                                <iframe 
+                                    src={modelo.link} 
+                                    width="100%" 
+                                    height="500px" 
+                                    title={`Projeto ${modelo.id}`} 
+                                    frameBorder="0"
+                                />
+                                <p>{modelo.texto}</p>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+                <div className=" md:w-1/4 p-4 flex-shrink-0" onWheel={(e) => handleScroll(e, sliderRef4)}>
+                    <h3 className="text-xl font-bold">Categoria 4</h3>
+                    <Slider ref={sliderRef4} {...settings}>
+                        {modelosCategoria4.map(modelo => (
+                            <div key={modelo.id}>
+                                <iframe 
+                                    src={modelo.link} 
+                                    width="100%" 
+                                    height="500px" 
+                                    title={`Projeto ${modelo.id}`} 
+                                    frameBorder="0"
+                                />
+                                <p>{modelo.texto}</p>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </section>
         </section>
     );
 };

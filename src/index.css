@@ -2,14 +2,17 @@
 
 body {
   @apply bg-custom-background z-0 bg-fixed bg-cover text-white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
+  overflow-x: hidden; /* Evita o scroll lateral */
 }
 
 code {
@@ -29,10 +32,55 @@ code {
   padding: 10px;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
 
 
+main, footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 10px;
+  }
 
+  .App {
+    min-width: 320px;
+  }
+
+  .modelo-coluna {
+    flex: 1 1 50%; /* Cada coluna ocupa 50% da largura */
+  }
+}
+
+@media (max-width: 480px) {
+  header, main, footer {
+    padding: 5px;
+  }
+
+  .App {
+    min-width: 280px;
+  }
+
+  .modelo-coluna {
+    flex: 1 1 100%; /* Cada coluna ocupa 100% da largura */
+  }
+}
+
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

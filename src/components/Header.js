@@ -1,69 +1,82 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import Logo from '../images/logo-400x100-white.png';
 import BackgroundVideo from '../images/digitando-codigos.mp4';
 import SobreporVideo from '../images/dots-movie.png';
+import Logo from '../images/logo-400x100-white.png'; // Certifique-se de que o caminho para o logo está correto
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight - 50);
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header id="header" className="relative text-white">
       {/* Menu fixo no topo */}
       <div
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-    isScrolled ? 'bg-[#000b1b] opacity-100 shadow-md' : 'bg-transparent'
-  }`}
->
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-12 py-4">
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          isScrolled ? 'bg-[#000b1b] opacity-100 shadow-md' : 'bg-transparent'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-12 py-4">
           {/* Logo */}
           <img src={Logo} alt="Logo Commit Dev" className="h-8 sm:h-10" />
 
           {/* Navegação */}
           <nav className="hidden sm:flex space-x-6">
-            <Link
-              to="header"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:underline text-sm sm:text-base"
-            >
+            <a href="#home" className="cursor-pointer hover:underline text-sm sm:text-base">
               Home
-            </Link>
-            <Link
-              to="services"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:underline text-sm sm:text-base"
-            >
-              Soluções
-            </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:underline text-sm sm:text-base"
-            >
+            </a>
+            <a href="#modelos" className="cursor-pointer hover:underline text-sm sm:text-base">
+              Modelos
+            </a>
+            <a href="#cases-de-sucesso" className="cursor-pointer hover:underline text-sm sm:text-base">
+              Cases de Sucesso
+            </a>
+            <a href="#contato" className="cursor-pointer hover:underline text-sm sm:text-base">
               Contato
-            </Link>
+            </a>
           </nav>
 
-          {/* Menu para dispositivos móveis */}
+          {/* Botão de menu para dispositivos móveis */}
           <button
             className="sm:hidden text-white focus:outline-none"
             aria-label="Abrir menu"
+            onClick={toggleMenu}
           >
             ☰
           </button>
         </div>
+
+        {/* Menu para dispositivos móveis */}
+        {isMenuOpen && (
+          <nav className="sm:hidden bg-[#000b1b] text-white">
+            <a href="#home" className="block px-4 py-2 hover:bg-gray-700">
+              Home
+            </a>
+            <a href="#modelos" className="block px-4 py-2 hover:bg-gray-700">
+              Modelos
+            </a>
+            <a href="#cases-de-sucesso" className="block px-4 py-2 hover:bg-gray-700">
+              Cases de Sucesso
+            </a>
+            <a href="#contato" className="block px-4 py-2 hover:bg-gray-700">
+              Contato
+            </a>
+          </nav>
+        )}
       </div>
 
       {/* Conteúdo Principal */}
