@@ -28,7 +28,7 @@ module.exports = {
       animation: {
         highlight: 'highlight 2s infinite',
         breathing: 'breathing 3s ease-in-out infinite',
-        rotate: 'rotate 10s linear infinite',
+        rotate: 'rotate 20s linear infinite',
       },
     },
   },

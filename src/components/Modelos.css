@@ -1,0 +1,69 @@
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide-fade {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-fade {
+  animation: slide-fade 16s linear infinite;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.delay-6s {
+  animation-delay: 6s;
+}
+
+.delay-8s {
+  animation-delay: 8s;
+}
+
+.delay-10s {
+  animation-delay: 10s;
+}
+
+.delay-12s {
+  animation-delay: 12s;
+}
+
+.delay-14s {
+  animation-delay: 14s;
+}
+
+.border-gradient {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+  border-radius: 5px; /* Tailwind class for rounded-lg */
+}
