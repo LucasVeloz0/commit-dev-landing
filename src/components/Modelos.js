@@ -11,21 +11,21 @@ import projeto8 from '../images/projeto8.png';
 
 const Modelos = () => {
   return (
-    <section className="case-de-sucesso">
-      <section className="w-11/12 mx-auto my-8">
-        <div className="flex flex-wrap justify-between">
+    <section className="case-de-sucesso my-8 w-full">
+      <section className="w-full mx-auto my-8">
+        <div className="flex flex-wrap justify-between modelos">
           <div className="w-full md:auto"> 
-            <h2 className="text-3xl font-michroma text-white text-center pb-11">Modelos de Sites.</h2>        
-              <div className="bg-custom-background h-96 flex items-center justify-center overflow-hidden rounded-lg">
+            <h2 className="text-3xl font-roboto text-white text-center pb-11">Modelos de Sites.</h2>        
+              <div className="bg-custom-background h-96 flex items-center justify-center rounded-lg">
                 <span className="relative w-full h-full flex space-x-4">
-                  <img src={projeto1} alt="Projeto 1" className="w-1/4 h-full object-cover animate-slide-fade rounded-2xl " />
-                  <img src={projeto2} alt="Projeto 2" className="w-1/4 h-full object-cover animate-slide-fade delay-2s rounded-2xl" />
-                  <img src={projeto3} alt="Projeto 3" className="w-1/4 h-full object-cover animate-slide-fade delay-4s rounded-2xl" />
-                  <img src={projeto4} alt="Projeto 4" className="w-1/4 h-full object-cover animate-slide-fade delay-6s rounded-2xl" />
-                  <img src={projeto5} alt="Projeto 5" className="w-1/4 h-full object-cover animate-slide-fade delay-8s rounded-2xl" />
-                  <img src={projeto6} alt="Projeto 6" className="w-1/4 h-full object-cover animate-slide-fade delay-10s rounded-2xl" />
-                  <img src={projeto7} alt="Projeto 7" className="w-1/4 h-full object-cover animate-slide-fade delay-12s rounded-2xl" />
-                  <img src={projeto8} alt="Projeto 8" className="w-1/4 h-full object-cover animate-slide-fade delay-14s rounded-2xl" />
+                  <img src={projeto1} alt="Projeto 1" className="w-full h-full object-cover animate-slide-fade rounded-2xl" />
+                  <img src={projeto2} alt="Projeto 2" className="w-full h-full object-cover animate-slide-fade delay-2s rounded-2xl" />
+                  <img src={projeto3} alt="Projeto 3" className="w-full h-full object-cover animate-slide-fade delay-4s rounded-2xl" />
+                  <img src={projeto4} alt="Projeto 4" className="w-full h-full object-cover animate-slide-fade delay-6s rounded-2xl" />
+                  <img src={projeto5} alt="Projeto 5" className="w-full h-full object-cover animate-slide-fade delay-8s rounded-2xl" />
+                  <img src={projeto6} alt="Projeto 6" className="w-full h-full object-cover animate-slide-fade delay-10s rounded-2xl" />
+                  <img src={projeto7} alt="Projeto 7" className="w-full h-full object-cover animate-slide-fade delay-12s rounded-2xl" />
+                  <img src={projeto8} alt="Projeto 8" className="w-full h-full object-cover animate-slide-fade delay-14s rounded-2xl" />
                 </span>
               </div>
           </div>

@@ -44,7 +44,7 @@ const Contato = () => {
 
           {/* Email */}
           <a
-            href="mailto:seuemail@dominio.com" // Substitua pelo seu endereço de email
+            href="mailto:contato@commit.dev.br" // Substitua pelo seu endereço de email
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center text-gray-100 hover:text-blue-500 transition duration-300"

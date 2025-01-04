@@ -22,6 +22,13 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleButtonClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header id="header" className="relative text-white">
       {/* Menu fixo no topo */}
@@ -36,18 +43,30 @@ const Header = () => {
 
           {/* Navegação */}
           <nav className="hidden sm:flex space-x-6">
-            <a href="#home" className="cursor-pointer hover:underline text-sm sm:text-base">
+            <button
+              className="text-white hover:text-gray-300"
+              onClick={() => handleButtonClick('home')}
+            >
               Home
-            </a>
-            <a href="#modelos" className="cursor-pointer hover:underline text-sm sm:text-base">
+            </button>
+            <button
+              className="text-white hover:text-gray-300"
+              onClick={() => handleButtonClick('modelos')}
+            >
               Modelos
-            </a>
-            <a href="#cases-de-sucesso" className="cursor-pointer hover:underline text-sm sm:text-base">
+            </button>
+            <button
+              className="text-white hover:text-gray-300"
+              onClick={() => handleButtonClick('cases')}
+            >
               Cases de Sucesso
-            </a>
-            <a href="#contato" className="cursor-pointer hover:underline text-sm sm:text-base">
+            </button>
+            <button
+              className="text-white hover:text-gray-300"
+              onClick={() => handleButtonClick('contato')}
+            >
               Contato
-            </a>
+            </button>
           </nav>
 
           {/* Botão de menu para dispositivos móveis */}
@@ -63,18 +82,30 @@ const Header = () => {
         {/* Menu para dispositivos móveis */}
         {isMenuOpen && (
           <nav className="sm:hidden bg-[#000b1b] text-white">
-            <a href="#home" className="block px-4 py-2 hover:bg-gray-700">
+            <button
+              className="block px-4 py-2 hover:bg-gray-700"
+              onClick={() => handleButtonClick('home')}
+            >
               Home
-            </a>
-            <a href="#modelos" className="block px-4 py-2 hover:bg-gray-700">
+            </button>
+            <button
+              className="block px-4 py-2 hover:bg-gray-700"
+              onClick={() => handleButtonClick('modelos')}
+            >
               Modelos
-            </a>
-            <a href="#cases-de-sucesso" className="block px-4 py-2 hover:bg-gray-700">
+            </button>
+            <button
+              className="block px-4 py-2 hover:bg-gray-700"
+              onClick={() => handleButtonClick('cases-de-sucesso')}
+            >
               Cases de Sucesso
-            </a>
-            <a href="#contato" className="block px-4 py-2 hover:bg-gray-700">
+            </button>
+            <button
+              className="block px-4 py-2 hover:bg-gray-700"
+              onClick={() => handleButtonClick('contato')}
+            >
               Contato
-            </a>
+            </button>
           </nav>
         )}
       </div>

@@ -11,10 +11,18 @@ function App() {
     <div className="App bg-custom-background w-full mx-auto min-w-[430px]">
       <Header />
       <main>
-        <Home />
-        <Modelos />
-        <CaseDeSucesso />
-        <Contato />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="modelos" className="my-8">
+          <Modelos />
+        </section>
+        <section id="cases" className="my-8">
+          <CaseDeSucesso />
+        </section>
+        <section id="contato" className="my-8">
+          <Contato />
+        </section>
       </main>
       <Footer />
     </div>

@@ -8,7 +8,7 @@
 }
 
 .animate-slide {
-  animation: slide 60s linear infinite;
+  animation: slide 20s linear infinite;
 }
 
 @keyframes slide-fade {
@@ -29,7 +29,7 @@
 }
 
 .animate-slide-fade {
-  animation: slide-fade 16s linear infinite;
+  animation: slide-fade 20s linear infinite;
 }
 
 .delay-2s {
@@ -58,6 +58,32 @@
 
 .delay-14s {
   animation-delay: 14s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fade-in 2s forwards;
+}
+
+.fade-out {
+  animation: fade-out 2s forwards;
 }
 
 .border-gradient {
