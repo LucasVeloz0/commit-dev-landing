@@ -70,7 +70,7 @@ const Home = () => {
           {/* Seção com imagem à esquerda e texto à direita */}
           <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 relative">
-          <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
+          <div className="w-full max-w-[150px] max-h-[150px] mx-auto relative">
       <img
         src={ImageSeo}
         alt="Exemplo de site"
@@ -98,7 +98,7 @@ const Home = () => {
           {/* Imagem à esquerda com texto à direita superior e nova imagem abaixo */}
           <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 relative">
-          <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
+          <div className="w-full max-w-[150px] max-h-[150px] mx-auto relative">
             <img
               src={ImageSistemas}
               alt="Exemplo de site"
@@ -125,7 +125,7 @@ const Home = () => {
       </p>
     </div>
           <div className="flex-1 relative">
-            <div className="w-full max-w-[300px] max-h-[300px] mx-auto relative">
+            <div className="w-full max-w-[150px] max-h-[150px] mx-auto relative">
               <img
                 src={ImageMobile}
                 alt="Exemplo de performance"
