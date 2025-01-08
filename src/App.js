@@ -21,11 +21,12 @@ function App() {
         <section id="cases" className="my-8">
           <CaseDeSucesso />
         </section>
-        <section id="contato" className="my-8">
+        <section id="contato" className="">
           <Contato />
         </section>
+        <Footer />
       </main>
-      <Footer />
+      
       <BotaoFlutuante /> {/* Adiciona o componente BotaoFlutuante */}
     </div>
   );

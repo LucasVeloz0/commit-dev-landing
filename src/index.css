@@ -45,13 +45,20 @@ header {
 
 
 
-main, footer {
-  width: 100%;
+main { 
+  width: 100%; 
+  max-width: 1200px; 
+  box-sizing: border-box; /* Inclui padding e border na largura total */ 
+  margin-bottom: 0; /* Remove margem inferior */ 
+  padding-bottom: 0; /* Remove padding inferior */ }
+
+footer { 
+  width: 100%; 
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box; /* Inclui padding e border na largura total */
-}
+   box-sizing: border-box; /* Inclui padding e border na largura total */ 
+   margin-top: 0; /* Remove margem superior */ 
+   padding-top: 0; /* Remove padding superior */ }
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {

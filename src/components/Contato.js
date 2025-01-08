@@ -1,64 +1,61 @@
 import React from 'react';
+import logo from '../images/logo-400x100-white.png';
+import instagramIcon from '../images/instagram.svg';
+import whatsappIcon from '../images/whatsapp.svg';
+import emailIcon from '../images/email.svg';
 
 const Contato = () => {
   return (
     <section id="contato" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Contato</h2>
-        <div className="flex justify-center space-x-6">
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/commit.dev.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center text-gray-100 hover:text-pink-600 transition duration-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-12 h-12 mb-2"
-            >
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.259.057 2.014.267 2.485.441.59.217 1.014.48 1.46.926.445.446.708.87.926 1.46.174.471.384 1.226.441 2.485.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.259-.267 2.014-.441 2.485-.217.59-.48 1.014-.926 1.46-.446.445-.87.708-1.46.926-.471.174-1.226.384-2.485.441-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.259-.057-2.014-.267-2.485-.441-.59-.217-1.014-.48-1.46-.926-.445-.446-.708-.87-.926-1.46-.174-.471-.384-1.226-.441-2.485-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.057-1.259.267-2.014.441-2.485.217-.59.48-1.014.926-1.46.446-.445.87-.708 1.46-.926.471-.174 1.226-.384 2.485-.441 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.766 0 8.357.013 7.052.072 5.745.13 4.642.312 3.853.644c-.83.345-1.523.805-2.217 1.5C.853 3.63.392 4.323.047 5.153.315 5.952.497 7.054.556 8.362c.059 1.305.072 1.714.072 4.047s-.013 2.742-.072 4.047c-.059 1.308-.241 2.41-.509 3.209.345.83.805 1.523 1.5 2.217.707.708 1.4 1.16 2.229 1.507.799.268 1.901.45 3.209.509 1.305.059 1.714.072 4.047.072s2.742-.013 4.047-.072c1.308-.059 2.41-.241 3.209-.509.83-.345 1.523-.805 2.217-1.5.707-.707 1.16-1.4 1.507-2.229.268-.799.45-1.901.509-3.209.059-1.305.072-1.714.072-4.047s-.013-2.742-.072-4.047c-.059-1.308-.241-2.41-.509-3.209-.345-.83-.805-1.523-1.5-2.217-.707-.708-1.4-1.16-2.229-1.507-.799-.268-1.901-.45-3.209-.509C15.742.013 15.333 0 12 0zM12 5.838a6.163 6.163 0 100 12.326 6.163 6.163 0 000-12.326zm0 10.163a3.837 3.837 0 110-7.674 3.837 3.837 0 010 7.674zm4.406-11.345a1.44 1.44 0 100-2.881 1.44 1.44 0 000 2.881z" />
-            </svg>
-            Instagram
-          </a>
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4">
+          {/* Esquerda: Logo e Contato */}
+          <div className="flex flex-col items-center w-full md:w-1/2 pb-12 md:pb-0">
+            <img src={logo} alt="Logo" className="w-64 h-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-4 text-center">Contato</h2>
+            <div className="flex space-x-6 mb-4">
+              <a
+                href="https://www.instagram.com/commit.dev.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-gray-100 hover:text-pink-600 transition duration-300"
+              >
+                <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
+                <span className="text-sm">Instagram</span>
+              </a>
+              <a
+                href="https://wa.me/5515996012951"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
+              >
+                <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
+                <span className="text-sm">WhatsApp</span>
+              </a>
+              <a
+                href="mailto:contato@commit.dev.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-gray-100 hover:text-blue-500 transition duration-300"
+              >
+                <img src={emailIcon} alt="Email" className="w-10 h-10 mb-2" />
+                <span className="text-sm">Email</span>
+              </a>
+            </div>
+          </div>
 
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/5515996012951" // Substitua pelo número do WhatsApp com o código do país
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-12 h-12 mb-2"
-            >
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.029-.963-.271-.1-.467-.149-.662.149-.197.297-.758.963-.929 1.161-.17.197-.342.223-.639.074-.297-.149-1.255-.463-2.39-1.476-.884-.787-1.48-1.758-1.653-2.056-.173-.297-.019-.458.13-.606.134-.133.297-.346.446-.519.149-.173.198-.297.298-.495.099-.198.05-.371-.025-.519-.075-.148-.662-1.595-.907-2.182-.238-.572-.479-.495-.662-.495-.173-.009-.371-.012-.57-.012-.198 0-.518.074-.789.371-.271.297-1.04 1.015-1.04 2.479 0 1.463 1.065 2.875 1.213 3.071.149.198 2.094 3.2 5.071 4.487.709.305 1.263.487 1.695.623.712.227 1.36.195 1.87.118.571-.084 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.271-.198-.57-.346zm-5.472-11.382c-5.523 0-10 4.477-10 10 0 1.767.464 3.514 1.349 5.035l-1.399 4.01 4.154-1.364c1.443.787 3.057 1.204 4.896 1.204 5.522 0 10-4.478 10-10s-4.478-10-10-10zm0 18.407c-1.576 0-3.11-.423-4.428-1.222l-.317-.19-2.462.809.825-2.394-.205-.307c-.815-1.224-1.26-2.654-1.26-4.103 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" />
-            </svg>
-            WhatsApp
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:contato@commit.dev.br" // Substitua pelo seu endereço de email
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center text-gray-100 hover:text-blue-500 transition duration-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-12 h-12 mb-2"
-            >
-              <path d="M12 12.713l11.985-7.99A2 2 0 0022 2H2a2 2 0 00-1.985 2.723L12 12.713zM12 14.287L.015 6.297A2 2 0 000 8v8a2 2 0 002 2h20a2 2 0 002-2V8a2 2 0 00-.015-.703L12 14.287z" />
-            </svg>
-            Email
-          </a>
+          {/* Direita: Google Maps */}
+          <div className="flex-grow mx-6 w-full md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2487582355084!2d-47.451423124347585!3d-23.48754787885065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6002777853c5%3A0x7252d8ca882a697d!2sR.%20Porphyrio%20Loureiro%2C%20666%20-%20Jardim%20Santa%20Ros%C3%A1lia%2C%20Sorocaba%20-%20SP%2C%2018090-060!5e0!3m2!1spt-BR!2sbr!4v1736364964537!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="250"
+              allowFullScreen=""
+              loading="lazy"
+              className="rounded-lg shadow-lg"
+            ></iframe>
+            <p className="text-sm text-center mt-2">R. Porphyrio Loureiro, 666 - Jardim Santa Rosália, Sorocaba - SP, 18090-060</p>
+          </div>
         </div>
       </div>
     </section>
