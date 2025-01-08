@@ -8,7 +8,7 @@ const Contato = () => {
         <div className="flex justify-center space-x-6">
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/seu_perfil"
+            href="https://www.instagram.com/commit.dev.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center text-gray-100 hover:text-pink-600 transition duration-300"

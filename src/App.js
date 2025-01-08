@@ -5,6 +5,7 @@ import CaseDeSucesso from './components/CaseDeSucesso';
 import Modelos from './components/Modelos';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
+import BotaoFlutuante from './components/BotaoFlutuante'; // Importa o componente BotaoFlutuante
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </section>
       </main>
       <Footer />
+      <BotaoFlutuante /> {/* Adiciona o componente BotaoFlutuante */}
     </div>
   );
 }

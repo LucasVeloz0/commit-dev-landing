@@ -6,7 +6,7 @@ import case3 from '../images/case3.png';
 const CaseDeSucesso = () => {
   return (
     <section className="case-de-sucesso my-8">
-      <h2 className="text-3xl font-roboto text-white text-center pt-11 pb-11">Cases de Sucesso.</h2>
+      <h2 className="text-3xl font-roboto text-white text-center pt-11 pb-4">Cases de Sucesso.</h2>
       <section className="w-11/12 mx-auto my-8">
         <div className="flex flex-wrap justify-between">
           <div className="w-full sm:w-1/2 md:w-1/3 p-4">

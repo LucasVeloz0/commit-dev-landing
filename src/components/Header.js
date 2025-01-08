@@ -96,7 +96,7 @@ const Header = () => {
             </button>
             <button
               className="block px-4 py-2 hover:bg-gray-700"
-              onClick={() => handleButtonClick('cases-de-sucesso')}
+              onClick={() => handleButtonClick('cases')}
             >
               Cases de Sucesso
             </button>
@@ -145,9 +145,14 @@ const Header = () => {
               Sites, sistemas web e aplicativos.
             </p>
             <div className="w-full flex justify-center sm:justify-end">
-              <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+              <a
+                href="https://wa.me/5515996012951"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
+              >
                 Saiba Mais
-              </button>
+              </a>
             </div>
           </div>
         </div>

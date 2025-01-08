@@ -47,7 +47,14 @@ const Home = () => {
           {/* Div Esquerda - Parágrafo e Botão */}
           <div className="flex-1 text-center md:text-right">
             <p className="text-lg text-[#25a35b] font-roboto mb-4">Vamos transformar sua ideia!</p>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">Clique Aqui</button>
+            <a
+              href="https://wa.me/5515996012951"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-900 hover:bg-blue-700            text-white font-bold py-2 px-6 rounded"
+            >
+              Clique Aqui
+            </a>
           </div>
 
           {/* Div Direita - Lista */}
@@ -85,7 +92,11 @@ const Home = () => {
   </div>
             <div className="flex-1 px">
               <p className="text-lg text-gray-100 font-roboto max-w-2xl">
-                Apenas um site bonito não basta, ele precisa ser encontrado.
+              Por isso, desenvolvemos sites otimizados para SEO (Search Engine Optimization), garantindo que sua
+              empresa apareça nas primeiras páginas do Google. Com técnicas avançadas, criamos conteúdo rele-
+              vante, estruturação estratégica e velocidade aprimorada para destacar sua marca no ambiente digital,
+              aumentando seu tráfego organico. </p>    
+              <p className="text-lg text-gray-100 font-roboto max-w-2xl"> Seja visto. Seja encontrado. Cresça com SEO!
               </p>
             </div>
           </div>
