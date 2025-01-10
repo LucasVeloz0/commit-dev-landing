@@ -2,10 +2,12 @@ import React from 'react';
 import case1 from '../images/case1.png';
 import case2 from '../images/case2.png';
 import case3 from '../images/case3.png';
+import backgroundImage from '../images/background-cases.png';
 
 const CaseDeSucesso = () => {
   return (
-    <section className="case-de-sucesso my-8">
+    <section className="case-de-sucesso my-8"
+             style={{ backgroundImage: `url(${backgroundImage})` }}>
       <h2 className="text-3xl font-roboto text-white text-center pt-11 pb-4">Cases de Sucesso.</h2>
       <section className="w-11/12 mx-auto my-8">
         <div className="flex flex-wrap justify-between">
