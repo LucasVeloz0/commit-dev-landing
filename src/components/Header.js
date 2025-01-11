@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className="relative text-white">
+    <header id="header" className="relative text-white font-roboto">
       {/* Menu fixo no topo */}
       <div
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -133,7 +133,7 @@ const Header = () => {
         {/* Conteúdo sobre o vídeo */}
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-center px-4 sm:px-12 py-10">
           <div className="max-w-4xl w-full mx-auto">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-roboto mb-4 animate-breathing">
               Contrate a Commit.dev para criar seu site!
             </h1>
             <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left">

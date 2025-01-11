@@ -1,7 +1,7 @@
 :root {
     --azul: #000b1b;
     --azulmedio: #203359;
-    --verde: #25a35b;
+    --verde1: #25a35b;
     --laranja: #f54a0f;
     --bordo: #d9083c;
   
@@ -14,11 +14,11 @@
   
   }
   
-  h2 {
+  .h2-home {
     margin: 0;
     text-align: center;
     width: 100%;
-    color: var(--verde);
+    color: var(--verde1);
     font-size: 1.5rem;
   }
   
@@ -64,8 +64,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: var(--azul);
+    transition: transform 0.3s, box-shadow 0.3s;        
     text-decoration: none;
     width: 200px;
     text-align: center;
@@ -88,7 +87,7 @@
     height: 30px;
     margin: 10px 0;
     gap: 2rem;
-    animation: marquee 50s linear infinite;
+    animation: marquee 80s linear infinite;
     /* Animação para movimento infinito */
   }
   
@@ -97,7 +96,7 @@
     height: 30px;
     margin: 0px;
     gap: 2rem;
-    animation: marquee2 35s linear infinite;
+    animation: marquee2 60s linear infinite;
     /* Animação para movimento infinito */
   }
   

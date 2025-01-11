@@ -42,6 +42,33 @@ header {
   width: 100%;
 }
 
+.flex-div {
+    border-radius: 20px;
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+    margin: 30px 10px 10px 10px;
+    height: 230px;
+    background: var(--grad2);
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(37, 163, 91, 0.1);
+  }
+  
+  #div-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 0px;
+    background: var(--azul);
+    box-shadow: 0 0 5px rgba(37, 163, 91, 0.5);
+    transition: top 0.2s ease; /* Transição suave ao rolar */
+  }
+
 
 
 

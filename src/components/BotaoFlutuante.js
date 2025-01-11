@@ -32,7 +32,7 @@ const BotaoFlutuante = () => {
     };
 
     return (
-        <div className="fixed bottom-4 right-4 flex flex-col items-center">
+        <div className="fixed bottom-4 right-4 flex flex-col items-center font-roboto">
             <div
                 className={`mb-2 p-2 bg-white text-black rounded shadow-lg transition-opacity duration-500 ${
                     showMessage ? 'opacity-100' : 'opacity-0'

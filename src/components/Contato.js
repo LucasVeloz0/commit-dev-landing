@@ -6,7 +6,7 @@ import emailIcon from '../images/email.svg';
 
 const Contato = () => {
   return (
-    <section id="contato" className="py-20 bg-gray-900 text-white">
+    <section id="contato" className="py-20 bg-gray-900 text-white font-roboto">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4">
           {/* Esquerda: Logo e Contato */}
@@ -20,7 +20,7 @@ const Contato = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-gray-100 hover:text-pink-600 transition duration-300"
               >
-                <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
+                <img src={instagramIcon} alt="Instagram" className="w-10 h-10 mb-2" />
                 <span className="text-sm">Instagram</span>
               </a>
               <a
@@ -29,7 +29,7 @@ const Contato = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
               >
-                <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
+                <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10 mb-2" />
                 <span className="text-sm">WhatsApp</span>
               </a>
               <a
@@ -48,6 +48,7 @@ const Contato = () => {
           <div className="flex-grow mx-6 w-full md:w-1/2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2487582355084!2d-47.451423124347585!3d-23.48754787885065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6002777853c5%3A0x7252d8ca882a697d!2sR.%20Porphyrio%20Loureiro%2C%20666%20-%20Jardim%20Santa%20Ros%C3%A1lia%2C%20Sorocaba%20-%20SP%2C%2018090-060!5e0!3m2!1spt-BR!2sbr!4v1736364964537!5m2!1spt-BR!2sbr"
+              title='Google Maps'
               width="100%"
               height="250"
               allowFullScreen=""

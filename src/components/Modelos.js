@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import '../index.css';
 import projeto1 from '../images/projeto1.png';
 import projeto2 from '../images/projeto2.png';
 import projeto3 from '../images/projeto3.png';
@@ -38,34 +39,38 @@ const Modelos = () => {
           <div className="w-full">
             <h2 className="text-3xl font-roboto text-white text-center pb-3">Modelos de Sites</h2>
 
-            {/* Descrições */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4 px-4">
-              <div className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Landing-page</h3>
-                <p className="text-sm mt-2">
-                Capture a atenção do seu público e
-                  converta visitantes em clientes! Desenvolvemos landing pages estratégicas, com design impactante e foco em resultados, ideais para campanhas de marketing ou lançamento de produtos.                  
-                </p>
-              </div>
-              <div className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Site Institucional</h3>
-                <p className="text-sm mt-2">
-                Conte a história da sua empresa e fortaleça sua presença online! Desenvolvemos sites institucionais que comunicam seus valores, serviços e diferenciais com profissionalismo e um design alinhado à sua marca.
-                </p>
-              </div>
-              <div className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">E-commerce</h3>
-                <p className="text-sm mt-2">
-                Transforme sua loja virtual em uma experiência única para seus clientes! Criamos e-commerces modernos, seguros e otimizados para aumentar suas vendas, garantindo facilidade de navegação e integração com os melhores sistemas de pagamento.                      
-                </p>
-              </div>
-              <div className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg">
-                <h3 className="text-xl font-semibold">Portfólio</h3>
-                <p className="text-sm mt-2">
-                  Destaque o seu trabalho com um portfólio que impressiona! Criamos sites exclusivos para profissionais e empresas, com layouts elegantes que valorizam seus projetos e ajudam a conquistar novos clientes.
-                </p>
-              </div>
-            </div>
+  {[
+    {
+      title: "Landing-page",
+      description:
+        "Capture a atenção do seu público e converta visitantes em clientes! Desenvolvemos landing pages estratégicas, com design impactante e foco em resultados, ideais para campanhas de marketing ou lançamento de produtos.",
+    },
+    {
+      title: "Site Institucional",
+      description:
+        "Conte a história da sua empresa e fortaleça sua presença online! Desenvolvemos sites institucionais que comunicam seus valores, serviços e diferenciais com profissionalismo e um design alinhado à sua marca.",
+    },
+    {
+      title: "E-commerce",
+      description:
+        "Transforme sua loja virtual em uma experiência única para seus clientes! Criamos e-commerces modernos, seguros e otimizados para aumentar suas vendas, garantindo facilidade de navegação e integração com os melhores sistemas de pagamento.",
+    },
+    {
+      title: "Portfólio",
+      description:
+        "Destaque o seu trabalho com um portfólio que impressiona! Criamos sites exclusivos para profissionais e empresas, com layouts elegantes que valorizam seus projetos e ajudam a conquistar novos clientes.",
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <h3 className="text-xl font-semibold">{item.title}</h3>
+      <p className="text-sm mt-2">{item.description}</p>
+    </div>
+  ))}
+</div>
 
             {/* Slider */}
             <div className="bg-custom-background h-96 flex items-center justify-center rounded-lg relative overflow-hidden">

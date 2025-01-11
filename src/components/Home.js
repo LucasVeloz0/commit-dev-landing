@@ -9,7 +9,6 @@ const Home = () => {
     const handleScroll = () => {
       const icons = document.querySelectorAll("#div-icon");
       icons.forEach((icon) => {
-        const rect = icon.getBoundingClientRect();
         const scrollY = window.scrollY;
         const offset = scrollY * 0.3;
         icon.style.top = `${Math.min(offset, 220)}px`;
@@ -21,8 +20,8 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home">
-      <h2>Por que ter um site profissional é essencial para o seu negócio?</h2>
+    <section className="font-roboto" id="home">
+      <h2 className="h2-home">Por que ter um site profissional é essencial para o seu negócio?</h2>
       <p>
         Ter um site profissional não é apenas um diferencial, é uma necessidade.
         Seu site será a porta de entrada para clientes conhecerem sua empresa,
@@ -30,13 +29,13 @@ const Home = () => {
         oferecendo informações relevantes e mostrando que sua marca está
         preparada para atender às demandas.
       </p>
-      <h2>Somos especialistas em criar sites sob medida, focados em resultados.</h2>
-      <p>
+      <h2 className="h2-home">Somos especialistas em criar sites sob medida, focados em resultados.</h2>
+      <p >
         Cada projeto é desenvolvido com um design exclusivo, pensado para valorizar sua marca e conquistar novos
         clientes.
       </p>
 
-      <div className=" justify-center flex flex-wrap">
+      <div className=" justify-center flex flex-wrap font-roboto">
         {[
           {
             img: ImageSeo,
@@ -111,6 +110,7 @@ const Home = () => {
           "Design responsivo e amigável",
           "Criação de sites otimizados para SEO",
         ]}
+        reverse={true}
       />
       
     </section>
@@ -126,13 +126,13 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items, reverse = false }) => {
   // Embaralha os itens antes de renderizá-los
   const randomizedItems = shuffleArray(items);
 
   return (
     <div className="carrossel-wrapper">
-      <div className="carrossel">
+      <div className={reverse ? "carrossel-volta" : "carrossel"}>
         {randomizedItems.concat(randomizedItems).map((item, index) => (
           <div className="carrossel-item" key={index}>
             <div className="carrossel-text">{item}</div>
