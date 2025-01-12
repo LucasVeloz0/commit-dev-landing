@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <section className="font-roboto" id="home">
       <h2 className="h2-home">Por que ter um site profissional é essencial para o seu negócio?</h2>
-      <p>
+      <p className="text-base mx-auto text-center">
         Ter um site profissional não é apenas um diferencial, é uma necessidade.
         Seu site será a porta de entrada para clientes conhecerem sua empresa,
         seus serviços e produtos. Ele é uma vitrine aberta 24 horas por dia,
@@ -30,7 +30,7 @@ const Home = () => {
         preparada para atender às demandas.
       </p>
       <h2 className="h2-home">Somos especialistas em criar sites sob medida, focados em resultados.</h2>
-      <p >
+      <p className="text-base mx-auto text-center">
         Cada projeto é desenvolvido com um design exclusivo, pensado para valorizar sua marca e conquistar novos
         clientes.
       </p>
@@ -60,7 +60,7 @@ const Home = () => {
       </div>
 
       <div className="chamada-acao1 flex-col">
-        <p className="text-base sm:text-lg mb-6 font-roboto text-center">Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
+        <p className="text-base sm:text-lg mb-4 mx-8 font-roboto text-center">Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
         <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
           Clique Aqui
         </a>
