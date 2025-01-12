@@ -59,12 +59,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="chamada-acao1">
-        <p>Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
-        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
-          Clique Aqui
-        </a>
-      </div>
+      
 
       <Carousel
         items={[
@@ -89,6 +84,7 @@ const Home = () => {
         ]}
       />
 
+
 <Carousel
         items={[
           "Performance web elevada",
@@ -112,6 +108,13 @@ const Home = () => {
         ]}
         reverse={true}
       />
+
+<div className="chamada-acao1">
+        <p>Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
+        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
+          Clique Aqui
+        </a>
+      </div>
       
     </section>
   );

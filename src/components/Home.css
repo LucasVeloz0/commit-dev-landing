@@ -50,7 +50,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.1rem 0;
+  
+    
+  }
+
+  .chamada-acao1 p {
+    color: var(--verde1);
   }
   
   .btn {
@@ -78,14 +83,14 @@
     /* Oculta os itens fora da viewport */
     width: 100%;
     display: flex;
-    margin: 0.2rem;
-    padding: 0.2rem;
+    margin: 0px;
+    
   }
   
   .carrossel {
     display: flex;
     height: 30px;
-    margin: 10px 0;
+
     gap: 2rem;
     animation: marquee 80s linear infinite;
     /* Animação para movimento infinito */
@@ -94,7 +99,6 @@
   .carrossel-volta {
     display: flex;
     height: 30px;
-    margin: 0px;
     gap: 2rem;
     animation: marquee2 60s linear infinite;
     /* Animação para movimento infinito */
@@ -106,23 +110,22 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: var(--grad1);
-    padding: 10px 15px;
+    /*background: var(--grad1);*/
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .carrossel-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .carrossel-text {
-    margin: 5px;
-    font-size: 0.9rem;
+    
+    font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: var(--azulmedio);
   }
   
   @keyframes marquee {
