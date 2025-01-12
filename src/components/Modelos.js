@@ -64,7 +64,7 @@ const Modelos = () => {
   ].map((item, index) => (
     <div
       key={index}
-      className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+      className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl mx-4"
     >
       <h3 className="text-xl font-semibold">{item.title}</h3>
       <p className="text-base mt-2">{item.description}</p>
@@ -73,12 +73,12 @@ const Modelos = () => {
 </div>
 
             {/* Slider */}
-            <div className="bg-custom-background h-96 flex items-center justify-center rounded-lg relative overflow-hidden">
+            <div className="bg-custom-background flex items-center justify-center rounded-lg relative overflow-hidden">
               <div
                 ref={sliderRef}
                 style={{
                   display: 'flex',
-                  width: 'calc(100% * 16)',
+                  width: 'calc(100% * 12)',
                   gap: '10px',
                 }}
               >
