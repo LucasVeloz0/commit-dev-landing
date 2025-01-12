@@ -10,7 +10,7 @@ const Home = () => {
       const icons = document.querySelectorAll("#div-icon");
       icons.forEach((icon) => {
         const scrollY = window.scrollY;
-        const offset = scrollY * 0.3;
+        const offset = scrollY * 0.1;
         icon.style.top = `${Math.min(offset, 220)}px`;
       });
     };
