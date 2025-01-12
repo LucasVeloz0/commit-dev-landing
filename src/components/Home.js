@@ -54,13 +54,13 @@ const Home = () => {
             <div id="div-icon">
               <img src={img} alt="" className="icon" />
             </div>
-            <p className="text-sm mt-2">{text}</p>
+            <p className="text-base mt-2">{text}</p>
           </div>
         ))}
       </div>
 
-      <div className="chamada-acao1">
-        <p>Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
+      <div className="chamada-acao1 flex-col">
+        <p className="text-base sm:text-lg mb-6 font-roboto text-center">Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
         <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
           Clique Aqui
         </a>

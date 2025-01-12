@@ -6,7 +6,7 @@ import backgroundImage from '../images/background-cases.png';
 
 const CaseDeSucesso = () => {
   return (
-    <section className="case-de-sucesso my-8 font-roboto"
+    <section className="case-de-sucesso my-8 font-roboto cases"
              style={{ backgroundImage: `url(${backgroundImage})` }}>
       <h2 className="text-3xl font-roboto text-white text-center pt-11 pb-4">Cases de Sucesso.</h2>
       <section className="w-11/12 mx-auto my-8">

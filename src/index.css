@@ -13,6 +13,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; /* Evita o scroll lateral */
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e borda não causem overflow */
 }
 
 code {
@@ -39,14 +50,13 @@ code {
   align-items: center;
 }
 
-header {
-  width: 100%;
-}
+
 
 .flex-div {
     border-radius: 20px;
     display: flex;
-    width: 330px;
+    width: 100%; /* Ajusta para largura total */
+    max-width: 330px; /* Define um máximo */
     justify-content: space-between;
     margin: 30px 10px 10px 10px;
     height: 230px;
@@ -70,6 +80,11 @@ header {
     transition: top 0.2s ease; /* Transição suave ao rolar */
   }
 
+  cases {
+    width: 30px;
+    height: 30px;
+    fill: white;
+  }
 
 
 
@@ -100,6 +115,7 @@ footer {
 
   .modelo-coluna {
     flex: 1 1 50%; /* Cada coluna ocupa 50% da largura */
+    padding: 5px;
   }
 }
 

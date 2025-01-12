@@ -139,7 +139,7 @@ const Header = () => {
             <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left">
               Seu negócio será visível por seus clientes com seu site rápido e seguro.
             </h2>
-            <p className="text-sm sm:text-lg mb-6 font-roboto text-left">
+            <p className="text-base sm:text-lg mb-6 font-roboto text-left">
               Criamos soluções web e aplicativos de alto desempenho.
               <br />
               Sites, sistemas web e aplicativos.
