@@ -49,14 +49,9 @@
   .chamada-acao1 {
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center;  
     
-  }
-
-  .chamada-acao1 p {
-    color: var(--verde1);
-  }
+  }  
   
   .btn {
     flex: 0 0 auto;

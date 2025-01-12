@@ -21,19 +21,21 @@ const Home = () => {
 
   return (
     <section className="font-roboto" id="home">
-      <h2 className="h2-home">Por que ter um site profissional é essencial para o seu negócio?</h2>
-      <p className="text-base mx-auto text-center">
-        Ter um site profissional não é apenas um diferencial, é uma necessidade.
-        Seu site será a porta de entrada para clientes conhecerem sua empresa,
-        seus serviços e produtos. Ele é uma vitrine aberta 24 horas por dia,
-        oferecendo informações relevantes e mostrando que sua marca está
-        preparada para atender às demandas.
-      </p>
-      <h2 className="h2-home">Somos especialistas em criar sites sob medida, focados em resultados.</h2>
-      <p className="text-base mx-auto text-center">
-        Cada projeto é desenvolvido com um design exclusivo, pensado para valorizar sua marca e conquistar novos
-        clientes.
-      </p>
+      <div className="container mx-auto max-w-[1200px] px-4">
+        <h2 className="h2-home">Por que ter um site profissional é essencial para o seu negócio?</h2>
+        <p className="text-base text-center">
+          Ter um site profissional não é apenas um diferencial, é uma necessidade.
+          Seu site será a porta de entrada para clientes conhecerem sua empresa,
+          seus serviços e produtos. Ele é uma vitrine aberta 24 horas por dia,
+          oferecendo informações relevantes e mostrando que sua marca está
+          preparada para atender às demandas.
+        </p>
+        <h2 className="h2-home mt-8">Somos especialistas em criar sites sob medida, focados em resultados.</h2>
+        <p className="text-base text-center">
+          Cada projeto é desenvolvido com um design exclusivo, pensado para valorizar sua marca e conquistar novos
+          clientes.
+        </p>
+      </div>
 
       <div className=" justify-center flex flex-wrap font-roboto">
         {[
@@ -58,13 +60,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-
-      <div className="chamada-acao1 flex-col">
-        <p className="text-base sm:text-lg mb-4 mx-8 font-roboto text-center">Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
-        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
-          Clique Aqui
-        </a>
-      </div>
+      
 
       <Carousel
         items={[
@@ -114,9 +110,9 @@ const Home = () => {
         reverse={true}
       />
 
-<div className="chamada-acao1">
-        <p>Vamos transformar sua ideia em uma presença digital que te traz resultados!</p>
-        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn">
+<div className="chamada-acao1 flex-col">
+        <h2 className="h2-home text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto">Vamos transformar sua ideia em uma presença digital que te traz resultados!</h2>
+        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn mt-6">
           Clique Aqui
         </a>
       </div>
