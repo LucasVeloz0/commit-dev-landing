@@ -73,57 +73,35 @@ const Modelos = () => {
 </div>
 
             {/* Slider */}
-            <div className="bg-custom-background flex items-center justify-center rounded-lg relative overflow-hidden">
+            <div className="bg-custom-background flex items-center justify-center rounded-xl relative overflow-hidden">
               <div
                 ref={sliderRef}
                 style={{
                   display: 'flex',
-                  width: 'calc(100% * 12)',
+                  width: 'max-content',
                   gap: '10px',
                 }}
               >
                 {projetos.concat(projetos).map((projeto, index) => (
                   <div
                     key={index}
+                    className="relative overflow-hidden rounded-lg"
                     style={{
-                      position: 'relative',
-                      borderRadius: '15px',
-                      overflow: 'hidden',
                       marginRight: '10px',
                       flex: '0 0 calc(25% - 10px)',
-                      ...(window.innerWidth < 768 && {
-                        flex: '0 0 calc(50% - 10px)',
-                      }),
-                      ...(window.innerWidth < 480 && {
-                        flex: '0 0 calc(70% - 10px)',
-                      }),
                     }}
                   >
-                    <img
-                      src={projeto}
-                      alt={`Projeto ${index + 1}`}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        borderRadius: '15px',
-                        position: 'relative',
-                        zIndex: 0,
-                      }}
-                    />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '15px',
+                    {/* Contêiner para garantir que a imagem siga o arredondamento */}
+                    <div className="w-full h-full rounded-lg overflow-hidden" style={{
                         border: '5px solid',
-                        borderImage: 'linear-gradient(to bottom right, #203359, #d9083c, #25a35b) 1',
-                        zIndex: 10,
-                      }}
-                    />
+                        borderImage: 'linear-gradient(to bottom right, #203359, #25a35b) 1',
+                      }}>
+                      <img
+                        src={projeto}
+                        alt={`Projeto ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>                    
                   </div>
                 ))}
               </div>

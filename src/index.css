@@ -84,6 +84,8 @@ code {
     
   }
 
+  
+
 
 
 main { 
@@ -107,6 +109,13 @@ footer {
     padding: 5px;
   }
 
+  .case-de-sucesso .relative {
+    .relative {
+      min-width: 150px;
+      max-width: 300px;
+    }
+  }
+
   .App {
     min-width: 320px;
   }
@@ -120,6 +129,10 @@ footer {
 @media (max-width: 480px) {
   header, main, footer {
     padding: 5px;
+  }
+
+  .case-de-sucesso .relative {
+    flex: 0 0 calc(100% - 10px); /* Ocupa 100% da largura */
   }
 
   .App {
