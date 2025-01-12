@@ -67,7 +67,7 @@ const Modelos = () => {
       className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
     >
       <h3 className="text-xl font-semibold">{item.title}</h3>
-      <p className="text-sm mt-2">{item.description}</p>
+      <p className="text-base mt-2">{item.description}</p>
     </div>
   ))}
 </div>

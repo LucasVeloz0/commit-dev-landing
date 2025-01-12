@@ -133,13 +133,13 @@ const Header = () => {
         {/* Conteúdo sobre o vídeo */}
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-center px-4 sm:px-12 py-10">
           <div className="max-w-4xl w-full mx-auto">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-roboto mb-4 animate-breathing">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing">
               Contrate a Commit.dev para criar seu site!
             </h1>
             <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left">
               Seu negócio será visível por seus clientes com seu site rápido e seguro.
             </h2>
-            <p className="text-sm sm:text-lg mb-6 font-roboto text-left">
+            <p className="text-base sm:text-lg mb-6 font-roboto text-left">
               Criamos soluções web e aplicativos de alto desempenho.
               <br />
               Sites, sistemas web e aplicativos.
