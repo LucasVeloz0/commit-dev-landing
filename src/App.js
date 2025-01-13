@@ -18,10 +18,10 @@ function App() {
         <section id="modelos" className="my-8">
           <Modelos />
         </section>
-        <section id="cases" className="my-8">
+        <section id="cases" className="">
           <CaseDeSucesso />
         </section>
-        <section id="contato" className="my-8">
+        <section id="contato" className="">
           <Contato />
         </section>
         <Footer />

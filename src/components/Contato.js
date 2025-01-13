@@ -7,12 +7,11 @@ import emailIcon from '../images/email.svg';
 const Contato = () => {
   return (
     <section id="contato" className="py-20 bg-gray-900 text-white font-roboto">
-      <div className="container mx-auto px-4">
+      <div className="container px-4">
         <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4">
           {/* Esquerda: Logo e Contato */}
-          <div className="flex flex-col items-center w-full md:w-1/2 pb-12 md:pb-0">
+          <div className="flex flex-col items-center w-full md:w-1/2 md:pb-0">
             <img src={logo} alt="Logo" className="w-64 h-auto mb-4" />
-            <h2 className="text-3xl font-bold mb-4 text-center">Contato</h2>
             <div className="flex space-x-6 mb-4">
               <a
                 href="https://www.instagram.com/commit.dev.br/"
@@ -20,7 +19,7 @@ const Contato = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-gray-100 hover:text-pink-600 transition duration-300"
               >
-                <img src={instagramIcon} alt="Instagram" className="w-10 h-10 mb-2" />
+                <img src={instagramIcon} alt="Instagram" className="w-8 h-8 mb-2" />
                 <span className="text-sm">Instagram</span>
               </a>
               <a
@@ -29,7 +28,7 @@ const Contato = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-gray-100 hover:text-[#25a35b] transition duration-300"
               >
-                <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10 mb-2" />
+                <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8 mb-2" />
                 <span className="text-sm">WhatsApp</span>
               </a>
               <a
@@ -38,7 +37,7 @@ const Contato = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-gray-100 hover:text-blue-500 transition duration-300"
               >
-                <img src={emailIcon} alt="Email" className="w-10 h-10 mb-2" />
+                <img src={emailIcon} alt="Email" className="w-8 h-8 mb-2" />
                 <span className="text-sm">Email</span>
               </a>
             </div>

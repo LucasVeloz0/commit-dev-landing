@@ -37,7 +37,7 @@ const Modelos = () => {
       <section className="w-full mx-auto my-8">
         <div className="flex flex-wrap justify-between modelos">
           <div className="w-full">
-            <h2 className="text-3xl font-roboto text-white text-center pb-3">Modelos de Sites</h2>
+            <h2 className="text-4xl font-roboto text-white text-center pb-3">Modelos de Sites</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4 px-4">
   {[
@@ -66,14 +66,14 @@ const Modelos = () => {
       key={index}
       className="bg-gray-800 text-white p-4 rounded-lg text-center shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl mx-4"
     >
-      <h3 className="text-xl font-semibold">{item.title}</h3>
-      <p className="text-base mt-2">{item.description}</p>
+      <h3 className="text-xl font-roboto ">{item.title}</h3>
+      <p className="text-base mt-2 font-roboto">{item.description}</p>
     </div>
   ))}
 </div>
 
             {/* Slider */}
-            <div className="bg-custom-background flex items-center justify-center rounded-xl relative overflow-hidden">
+            <div className="bg-custom-background flex items-center justify-center rounded-xl relative overflow-hidden ">
               <div
                 ref={sliderRef}
                 style={{
@@ -92,16 +92,13 @@ const Modelos = () => {
                     }}
                   >
                     {/* Contêiner para garantir que a imagem siga o arredondamento */}
-                    <div className="w-full h-full rounded-lg overflow-hidden" style={{
-                        border: '5px solid',
-                        borderImage: 'linear-gradient(to bottom right, #203359, #25a35b) 1',
-                      }}>
+                    
                       <img
                         src={projeto}
                         alt={`Projeto ${index + 1}`}
                         className="w-full h-full object-cover"
                       />
-                    </div>                    
+                                        
                   </div>
                 ))}
               </div>

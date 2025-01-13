@@ -110,11 +110,16 @@ const Home = () => {
         reverse={true}
       />
 
-<div className="chamada-acao1 flex-col">
-        <h2 className="h2-home text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto">Vamos transformar sua ideia em uma presença digital que te traz resultados!</h2>
-        <a href="https://wa.me/5515996012951" target="_blank" rel="noopener noreferrer" className="btn mt-6">
-          Clique Aqui
-        </a>
+      <div className="chamada-acao1 flex-col">
+        <h2 className="h2-home text-base sm:text-xl md:text-2xl mb-4 font-roboto">Vamos transformar sua ideia em uma presença digital que te traz resultados!</h2>
+        <a
+  href="https://wa.me/5515996012951"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn mt-6 flex items-center justify-center gap-2 px-4 py-2 w-48 text-white bg-green-600 rounded-lg border border-gray-300 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+>
+  Clique Aqui
+</a>
       </div>
       
     </section>

@@ -6,10 +6,14 @@ import backgroundImage from '../images/background-cases.png';
 
 const CaseDeSucesso = () => {
   return (
-    <section className="case-de-sucesso my-8 font-roboto"
-             style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <h2 className="text-3xl font-roboto text-white text-center pt-11 pb-4">Cases de Sucesso.</h2>
-      <section className="w-11/12 mx-auto my-8">
+    <section className="case-de-sucesso font-roboto"
+             style={{  backgroundImage: `url(${backgroundImage})`,
+             backgroundRepeat: 'no-repeat', // Impede a repetição da imagem
+             backgroundSize: 'cover',      // Faz a imagem cobrir toda a área
+             backgroundPosition: 'center', // Centraliza a imagem
+           }}>
+      <h2 className="text-4xl font-roboto text-white text-center pt-11 pb-4">Cases de Sucesso</h2>
+      <section className="w-11/12 mx-auto ">
         <div className="flex flex-wrap justify-between">
           <div className="w-full sm:w-1/2 md:w-1/3 p-4">
             <a href="https://neurofeedbacksorocabasp.com.br" target="_blank" rel="noopener noreferrer">

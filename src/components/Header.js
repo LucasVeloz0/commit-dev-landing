@@ -133,26 +133,35 @@ const Header = () => {
         {/* Conteúdo sobre o vídeo */}
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-center px-4 sm:px-12 py-10">
           <div className="max-w-4xl w-full mx-auto">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing"
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', // Sombra preta sutil
+            }}>
               Contrate a Commit.dev para criar seu site!
             </h1>
-            <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left">
+            <h2 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 font-roboto text-left"
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', // Sombra preta sutil
+            }}>
               Seu negócio será visível por seus clientes com seu site rápido e seguro.
             </h2>
-            <p className="text-base sm:text-lg mb-6 font-roboto text-left">
+            <p className="text-base sm:text-lg mb-6 font-roboto text-left"
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', // Sombra preta sutil
+            }}>
               Criamos soluções web e aplicativos de alto desempenho.
               <br />
               Sites, sistemas web e aplicativos.
             </p>
             <div className="w-full flex justify-center sm:justify-end">
-              <a
-                href="https://wa.me/5515996012951"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
-              >
-                Saiba Mais
-              </a>
+            <a
+              href="https://wa.me/5515996012951"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-6 py-3 w-60 text-white bg-blue-800 rounded-lg border border-blue-700 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-black"
+            >
+              Peça seu orçamento
+            </a>
             </div>
           </div>
         </div>
