@@ -39,7 +39,7 @@ const Header = () => {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-12 py-4">
           {/* Logo */}
-          <img src={Logo} alt="Logo Commit Dev" className="h-8 sm:h-10" />
+          <img src={Logo} alt="Logo Commit Dev" className="w-64 h-auto sm:h-10 md:min-w-24" />
 
           {/* Navegação */}
           <nav className="hidden sm:flex space-x-6">
@@ -143,7 +143,7 @@ const Header = () => {
             style={{
               textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', // Sombra preta sutil
             }}>
-              Seu negócio será visível por seus clientes com seu site rápido e seguro.
+              Sua empresa será visível por seus clientes com seu site rápido e seguro.
             </h2>
             <p className="text-base sm:text-lg mb-6 font-roboto text-left"
             style={{
@@ -155,12 +155,12 @@ const Header = () => {
             </p>
             <div className="w-full flex justify-center sm:justify-end">
             <a
-              href="https://wa.me/5515996012951"
+              href="https://wa.me/5515996012951?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20[insira%20o%20serviço%20desejado,%20como%20criação%20de%20site%20ou%20SEO].%20Poderíamos%20conversar?"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 w-60 text-white bg-blue-800 rounded-lg border border-blue-700 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-black"
             >
-              Peça seu orçamento
+              Solicite seu orçamento
             </a>
             </div>
           </div>

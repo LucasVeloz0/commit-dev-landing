@@ -54,7 +54,7 @@ const Home = () => {
         ].map(({ img, text }, index) => (
           <div className="flex-div sm:max-w-sm md:max-w-md lg:max-w-lg" key={index}>
             <div id="div-icon">
-              <img src={img} alt="" className="icon" />
+              <img src={img} alt="" className="icon sm:max-w-sm md:max-w-md lg:max-w-lg" />
             </div>
             <p className="text-base mt-2">{text}</p>
           </div>
@@ -113,12 +113,12 @@ const Home = () => {
       <div className="chamada-acao1 flex-col">
         <h2 className="h2-home text-base sm:text-xl md:text-2xl mb-4 font-roboto">Vamos transformar sua ideia em uma presença digital que te traz resultados!</h2>
         <a
-  href="https://wa.me/5515996012951"
+  href="https://wa.me/5515996012951?text=Olá!%20Estou%20interessado%20em%20soluções%20web%20e%20SEO.%20Poderíamos%20conversar%20sobre%20como%20a%20Commit%20Dev%20pode%20ajudar%20meu%20negócio?"
   target="_blank"
   rel="noopener noreferrer"
   className="btn mt-6 flex items-center justify-center gap-2 px-4 py-2 w-48 text-white bg-green-600 rounded-lg border border-gray-300 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
 >
-  Clique Aqui
+Fale Conosco
 </a>
       </div>
       

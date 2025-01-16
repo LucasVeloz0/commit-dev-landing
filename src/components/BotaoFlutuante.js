@@ -49,7 +49,7 @@ const BotaoFlutuante = () => {
                 </button>
             ) : (
                 <a
-                    href="https://wa.me/5515996012951"
+                    href="https://wa.me/5515996012951?text=Olá!%20Preciso%20de%20ajuda%20para%20entender%20melhor%20os%20serviços%20da%20Commit%20Dev.%20Poderíamos%20conversar?"
                     className=" rounded-full p-4 shadow-lg hover:bg-green-600 transition duration-300"
                     target="_blank"
                     rel="noopener noreferrer"

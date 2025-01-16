@@ -11,13 +11,17 @@ app.use(cors());
 //   origin: 'https://commit.dev.br' // Substitua pela origem do seu frontend
 // }));
 
-// Serve arquivos estáticos da pasta 'public'
-app.use(express.static(path.join(__dirname, 'public')));
+// Configura o cache para arquivos estáticos
+app.use(express.static(path.join(__dirname, 'build'), {
+  maxAge: '1d',  // Cache de 1 dia para arquivos estáticos
+  etag: false,   // Desabilita o uso de ETag (opcional)
+}));
 
-// Exemplo de rota de API
-app.get('/api/data', (req, res) => {
-  res.json({ message: 'Hello from server!' });
+// Resto da configuração do servidor, como a rota para a página inicial
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
 
 // Inicia o servidor
 const PORT = process.env.PORT || 5000;
