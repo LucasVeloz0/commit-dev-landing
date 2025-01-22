@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import '../components/Home.css';
-import ImageSeo from '../images/seo.png'; // Ajuste o caminho conforme necessário
-import ImageSistemas from '../images/sistemas-web.png';
-import ImageMobile from '../images/mobile.png';
+import ImageSeo from '../images/seo.webp'; // Ajuste o caminho conforme necessário
+import ImageSistemas from '../images/sistemas-web.webp';
+import ImageMobile from '../images/mobile.webp';
 
 const Home = () => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="font-roboto" id="home">
+    <section className="font-roboto " id="home">
       <div className="container mx-auto max-w-[1200px] px-4">
         <h2 className="h2-home">Por que ter um site profissional é essencial para o seu negócio?</h2>
         <p className="text-base text-center">
@@ -37,7 +37,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className=" justify-center flex flex-wrap font-roboto">
+      <div className=" justify-center flex flex-wrap font-roboto ">
         {[
           {
             img: ImageSeo,

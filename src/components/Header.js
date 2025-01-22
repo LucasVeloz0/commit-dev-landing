@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import BackgroundVideo from '../images/digitando-codigos.mp4';
+import BackgroundVideo from '../images/desenvolvendo.webm';
 import SobreporVideo from '../images/dots-movie.png';
-import Logo from '../images/logo-400x100-white.png'; // Certifique-se de que o caminho para o logo está correto
+import Logo from '../images/logo400x100-white.webp'; // Certifique-se de que o caminho para o logo está correto
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,16 +30,16 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className="relative text-white font-roboto">
+    <header id="header" className=" relative w-full h-screen overflow-hidden">
       {/* Menu fixo no topo */}
       <div
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? 'bg-[#000b1b] opacity-100 shadow-md' : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-12 py-4">
+        <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-12 py-4">
           {/* Logo */}
-          <img src={Logo} alt="Logo Commit Dev" className="w-64 h-auto sm:h-10 md:min-w-24" />
+          <img src={Logo} alt="Logo Commit Dev" className="w-48 h-auto max-w-full sm:w-40 md:w-48 lg:w-64 xl:w-80" />
 
           {/* Navegação */}
           <nav className="hidden sm:flex space-x-6">
@@ -71,7 +71,7 @@ const Header = () => {
 
           {/* Botão de menu para dispositivos móveis */}
           <button
-            className="sm:hidden text-white focus:outline-none"
+            className="sm:hidden text-white focus:outline-none "
             aria-label="Abrir menu"
             onClick={toggleMenu}
           >
@@ -81,7 +81,7 @@ const Header = () => {
 
         {/* Menu para dispositivos móveis */}
         {isMenuOpen && (
-          <nav className="sm:hidden bg-[#000b1b] text-white">
+          <nav className="fixed top-16 left-0 w-full bg-[#000b1b] bg-opacity-75 text-white z-50">
             <button
               className="block px-4 py-2 hover:bg-gray-700"
               onClick={() => handleButtonClick('home')}
@@ -111,11 +111,11 @@ const Header = () => {
       </div>
 
       {/* Conteúdo Principal */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen">
         {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
           <video
-            className="w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             src={BackgroundVideo}
             autoPlay
             loop
@@ -124,16 +124,19 @@ const Header = () => {
         </div>
 
         {/* Overlay Image */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
         <img
-          className="absolute inset-0 w-full h-full object-cover opacity-20 z-10 pointer-events-none"
+          className="absolute inset-0 w-screen h-screen object-cover opacity-20 z-10 pointer-events-none"
           src={SobreporVideo}
           alt="Background Overlay"
         />
+        </div>
+      
 
         {/* Conteúdo sobre o vídeo */}
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-center px-4 sm:px-12 py-10">
           <div className="max-w-4xl w-full mx-auto">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing"
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-michroma mb-4 animate-breathing break-words text-responsive max-w-full"
             style={{
               textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)', // Sombra preta sutil
             }}>

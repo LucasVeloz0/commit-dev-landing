@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import '../index.css';
-import projeto1 from '../images/projeto1.png';
-import projeto2 from '../images/projeto2.png';
-import projeto3 from '../images/projeto3.png';
-import projeto4 from '../images/projeto4.png';
-import projeto5 from '../images/projeto5.png';
-import projeto6 from '../images/projeto6.png';
-import projeto7 from '../images/projeto7.png';
-import projeto8 from '../images/projeto8.png';
+import projeto1 from '../images/modelo1.webp';
+import projeto2 from '../images/modelo2.webp';
+import projeto3 from '../images/modelo3.webp';
+import projeto4 from '../images/modelo4.webp';
+import projeto5 from '../images/modelo5.webp';
+import projeto6 from '../images/modelo6.webp';
+import projeto7 from '../images/modelo7.webp';
+import projeto8 from '../images/modelo8.webp';
 
 const Modelos = () => {
   const sliderRef = useRef(null);

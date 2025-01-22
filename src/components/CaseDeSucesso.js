@@ -1,8 +1,8 @@
 import React from 'react';
-import case1 from '../images/case1.png';
-import case2 from '../images/case2.png';
-import case3 from '../images/case3.png';
-import backgroundImage from '../images/background-cases.png';
+import case1 from '../images/academia-do-cerebro.webp';
+import case2 from '../images/gabi-estrela.webp';
+import case3 from '../images/app-falcon-tarot.webp';
+import backgroundImage from '../images/background-cases.webp';
 
 const CaseDeSucesso = () => {
   return (

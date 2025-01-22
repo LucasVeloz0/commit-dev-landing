@@ -9,7 +9,7 @@ import BotaoFlutuante from './components/BotaoFlutuante'; // Importa o component
 
 function App() {
   return (
-    <div className="App bg-custom-background w-full mx-auto min-w-[430px]">
+    <div className="App bg-custom-background w-full mx-auto min-w-[320px]">
       <Header />
       <main>
         <section id="home" className="my-6">
