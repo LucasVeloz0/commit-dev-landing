@@ -52,6 +52,8 @@ const Contato = () => {
               height="250"
               allowFullScreen=""
               loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              sandbox="allow-scripts allow-same-origin allow-popups"
               className="rounded-lg shadow-lg"
             ></iframe>
             <p className="text-sm text-center mt-2">R. Porphyrio Loureiro, 666 - Jardim Santa Rosália, Sorocaba - SP, 18090-060</p>

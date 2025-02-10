@@ -116,7 +116,7 @@ const Home = () => {
   href="https://wa.me/5515996012951?text=Olá!%20Estou%20interessado%20em%20soluções%20web%20e%20SEO.%20Poderíamos%20conversar%20sobre%20como%20a%20Commit%20Dev%20pode%20ajudar%20meu%20negócio?"
   target="_blank"
   rel="noopener noreferrer"
-  className="btn mt-6 flex items-center justify-center gap-2 px-4 py-2 w-48 text-white bg-green-600 rounded-lg border border-gray-300 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
+  className="flex items-center justify-center gap-2 my-4 px-6 py-2 w-60 text-white bg-blue-800 rounded-lg border border-blue-700 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-black"
 >
 Fale Conosco
 </a>
